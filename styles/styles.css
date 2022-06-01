@@ -5,7 +5,9 @@ body {
     --background-default: #EEF2F9;
     --color-primary-text: #191847;
     --primary-color: #1C57EE;
+    --secundary-color: #4787E9;
     --secondary-color: #00D98B;
+    --gray-default: #C9C9DA;
 }
 
 body, * { 
@@ -81,6 +83,47 @@ body, * {
     width: 10px;
     height: 10px;
     background: var(--color-primary-text);
+}
+
+.counterProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttonDecrement,
+.buttonIncrement {
+    font-family: 'Poppins', sans-serif;
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+    color: var(--background-default);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputNumberProduct {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+}   
+
+.containerInput {
+    width: 99px;
+    height: 29px;
+    border: 3px solid var(--gray-default);
+    outline: none;
+    border-radius: 10px;
 }
 
 
